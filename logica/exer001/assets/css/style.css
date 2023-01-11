@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(101, 101, 224);
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    width: 400px;
+    height: 110px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 200px;
+}
+
+section > h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
