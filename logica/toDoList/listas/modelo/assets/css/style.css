@@ -68,3 +68,25 @@ form button:hover {
 .pausado {
   color: red;
 }
+
+.input-tarefa {
+  border-radius: 5px;
+  color: black;
+  border-color: red;
+}
+
+.btn-tarefa:hover, .apagar:hover {
+  cursor: pointer;
+  background-color: darkgrey;
+  border-color: none;
+  border-radius: 5px;
+  color: white;
+}
+
+ul > li {
+  color: rgb(47, 40, 88);
+  list-style-type: none;
+  margin-bottom: 2px;
+  font-weight:bold ;
+}
+
