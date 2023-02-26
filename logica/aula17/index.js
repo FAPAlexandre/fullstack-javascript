@@ -4,7 +4,19 @@ function criaPessoa (nome, sobrenome,a , p) {
     return {
         nome,
         sobrenome,
-        fala(assunto) {
+
+        get nomeCompleto() {
+            return `${this.nome} ${this.sobrenome}`
+        },
+
+        set nomeCompleto (valor) {
+            valor = valor.split(' ')   
+            this.nome = valor.shift()
+            console.log(valor)   
+            this.sobrenome = valor.join(' ')
+        },
+
+        fala(assunto = 'Falando sobre nada') {
             return `${this.nome} está ${assunto}`;
         },
         altura: a,
@@ -17,6 +29,7 @@ function criaPessoa (nome, sobrenome,a , p) {
 }
 
 const p1  = criaPessoa('Alexandre', 'Paixão', 1.8, 80)
+p1.nomeCompleto = 'Maria Matias'
 console.log(p1.nome)
 console.log(p1.sobrenome)
-console.log(p1.imc())
+console.log(p1.fala())
