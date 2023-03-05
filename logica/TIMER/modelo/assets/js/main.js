@@ -11,8 +11,7 @@ function relogio (){
 
     
 
-    const relogio = document.querySelector('.relogio')
-
+  const relogio = document.querySelector('.relogio')
 
     let segundos = 0;
     let timer
@@ -57,3 +56,4 @@ function relogio (){
 }
 
 relogio()
+
